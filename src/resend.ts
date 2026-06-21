@@ -3,7 +3,7 @@ import type { EmailProvider, EmailParams, EmailResult } from "./types";
 
 export interface ResendServerConfig {
   apiKey: string;
-  /* Default "from" address/name */
+  /** Default "from" address/name, e.g. "Sammy's Brow Bar <noreply@yourdomain.com>". */
   from: string;
 }
 

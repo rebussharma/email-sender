@@ -1,0 +1,29 @@
+{
+  "name": "email-module",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./emailjs": "./src/emailjs.ts",
+    "./resend": "./src/resend.ts",
+    "./resend-proxy": "./src/resend-proxy.ts"
+  },
+  "peerDependencies": {
+    "@emailjs/browser": "*",
+    "resend": "*"
+  },
+  "peerDependenciesMeta": {
+    "@emailjs/browser": {
+      "optional": true
+    },
+    "resend": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "resend": "^6.14.0",
+    "typescript": "^6.0.3"
+  }
+}
